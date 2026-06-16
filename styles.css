@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --azul-botao-efeito: #4f9eff; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.container__button {
+    background-color: var(--azul-botao);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+    margin-left: 2em;
+}
+
+.secundario {
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 60% 40%;
+    margin: 0 6em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    text-align: left;
+}
+
+.descricao__texto {
+    font-size: 16px;
+    text-align: left;
+    color: var(--cinza-secundario);
+}
+
+.terciario__imagem {
+    width: 70%;
+
+}
+
+.terciario {
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    margin: 0 4em;
+}
+
+.terciario__descricao {
+    margin-right: 6em;
+}
+
+.terceiro__texto {
+    font-size: 15px;
+    padding: 0.2em;
+    text-align: justify-all;
+    color: var(--cinza-secundario);
+
+}
+
+.button__terciario {
+    padding: 1em;
+    display: block;
+    margin-top: 0.5em;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+
+.quarto {
+    grid-template-columns: 50% 50%;
+    margin: 0 6em;
+    align-items: center;
+}
+
+.quarto__imagem {
+    width: 90%;
+}
+
+.quarto__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    color: var(--branco-principal);
+}
+
+.quarto__texto {
+    font-size: 16px;
+    text-align: left;
+    color: var(--cinza-secundario);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+    margin: 0 2em;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 2em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.rodape__link {
+    font-size: 16px;
+    margin: 0 0.5em;
+}
+
+.rodape__link-texto {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin: 1.5em 0;
+}
+
+.rodape__link-texto:hover {
+    color: var(--azul-botao);
+}
+
+.container__button:hover {
+    background-color: var(--azul-botao-efeito);
+    color: var(--cor-fundo);
+}
